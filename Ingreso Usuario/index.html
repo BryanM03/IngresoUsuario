@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>
+        Ingreso Usuario
+    </title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/script.js"></script>
+
+</head>
+<body>
+    <section>
+        <blockquote>
+            <font>
+                <h2> Ingreso de datos del Usuario </h2>
+            </font>
+            <font class="formulario">
+                <form action="" method="get">
+                    <p>
+                        Nombres:
+                        <input  type="text" name="name_control" id="nombre" placeholder="Ingrese sus nombres" />
+                    </p>
+                    <p>
+                        Apellidos:
+                        <input type="text" name="name_control" id="apellido" placeholder="Ingrese sus apellidos" />
+                    </p>
+                    <p>
+                        Nacionalidad:
+                        <input type="text" name="nacionalidad" size="20" id="nacion">
+                    </p>
+                    <p>
+                        Correo electrónico:
+                        <input type="email" id="correo" name="email_control" required/>
+                    </p>
+                    <p>
+                        Fecha de nacimiento:
+                        <input type="date" name="date_control" />
+                    </p>
+                    <p>
+                        Teléfono:
+                        <input type="tel" id="celular" name="tel_control" id="telefono" />
+                    </p>
+                    <p>
+                        Sexo:
+                        <div>
+                            <input type="radio" id="selectorsexo" name="hm"
+                                   value="h" required> Hombre<br />
+                            <input type="radio" id="selectorsexo" name="hm"
+                                   value="m" required> Mujer<br />
+                            Otro:
+                            <input type="text" name="name_control" id="otro" placeholder="Especifique" /><br />
+                        </div>
+                    <p>
+                        Edad:
+                        <input type="number" name="numero" step="any" id="selectoredad">
+                    </p>
+                    <p>
+                        Color favorito:
+                        <input type="color" name="color_control" />
+                    </p>
+                    <button type="submit" onclick="validarFormulario()">
+                        Enviar
+                    </button>
+
+                </form>
+            </font>
+        </blockquote>
+    </section>
+</body>
+</html>
